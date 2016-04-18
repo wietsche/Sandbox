@@ -1,0 +1,516 @@
+!SESSION 2016-04-18 11:50:07.021 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_77
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ZA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\\Talend\\Workspaces\\Sandbox
+
+!ENTRY org.eclipse.jdt.launching.macosx 4 0 2016-04-18 11:50:08.249
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.macosx [319]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jdt.launching.ui.macosx 4 0 2016-04-18 11:50:08.269
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.ui.macosx [321]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-18 11:50:12.871
+!MESSAGE Both 'org.talend.model' and 'org.talend.model' register a package for 'platform:/resource/org.talend.model/model/TalendFile.xsd'
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:50:57.323
+!MESSAGE 2016-04-18 11:50:57,322 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - user@talend.com logged on HelloRIA
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:50:58.655
+!MESSAGE 2016-04-18 11:50:58,655 INFO  org.talend.core.repository.logintask.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.482
+!MESSAGE 2016-04-18 11:51:05,481 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:hadoop-yarn-common-2.6.0.2.2.0.0-2041.jar was defined with different locations.
+Components who define these jars are:[tSqoopExport, tHiveCreateTable, tHiveRow, tHiveInput, tPigLoad, tSqoopImportAllTables, tELTHiveMap, tSqoopMerge, tSqoopImport, tHiveLoad, tHiveConnection]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/hadoop-yarn-common-2.6.0.2.2.0.0-2041.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/hadoop-yarn-common-2.6.0.2.2.0.0-2041.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.489
+!MESSAGE 2016-04-18 11:51:05,489 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:scala-library-2.10.4.jar was defined with different locations.
+Components who define these jars are:[tNeo4jOutput, tNeo4jInput, tNeo4jConnection, tNeo4jRow, tKafkaCreateTopic, tKafkaConnection, tKafkaCommit, tKafkaInput, tNeo4jOutputRelationship]
+Locations:[platform:/plugin/org.talend.libraries.neo4j/lib/scala-library-2.10.4.jar, platform:/plugin/org.talend.libraries.apache.kafka/lib/scala-library-2.10.4.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.495
+!MESSAGE 2016-04-18 11:51:05,495 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:slf4j-log4j12-1.6.1.jar was defined with different locations.
+Components who define these jars are:[tHDFSPut, tCassandraOutputBulk, tHDFSCompare, tHBaseConnection, tHBaseOutput, tHDFSRename, tCassandraBulkExec, tSqoopImportAllTables, tELTHiveMap, tHDFSGet, tKafkaCreateTopic, tHDFSExist, tKafkaConnection, tHDFSConnection, tKafkaOutput, tSqoopExport, tHiveCreateTable, tHiveRow, tHDFSList, tKafkaInput, tSqoopMerge, tPigStoreResult, tCassandraRow, tHiveLoad, tHDFSProperties, tHCatalogInput, tHDFSInput, tCassandraInput, tHDFSOutputRaw, tHDFSRowCount, tHDFSDelete, tHDFSCopy, tCassandraConnection, tHCatalogOutput, tHiveInput, tCassandraOutput, tPigLoad, tHBaseInput, tKafkaCommit, tSqoopImport, tHDFSOutput, tHiveConnection]
+Locations:[platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.6.1.jar, platform:/plugin/org.talend.libraries.apache.kafka/lib/slf4j-log4j12-1.6.1.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.501
+!MESSAGE 2016-04-18 11:51:05,501 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:hadoop-yarn-api-2.6.0.2.2.0.0-2041.jar was defined with different locations.
+Components who define these jars are:[tSqoopExport, tHiveCreateTable, tHiveRow, tHiveInput, tPigLoad, tSqoopImportAllTables, tELTHiveMap, tSqoopMerge, tSqoopImport, tHiveLoad, tHiveConnection]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/hadoop-yarn-api-2.6.0.2.2.0.0-2041.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/hadoop-yarn-api-2.6.0.2.2.0.0-2041.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.506
+!MESSAGE 2016-04-18 11:51:05,506 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:stax-api-1.0.1.jar was defined with different locations.
+Components who define these jars are:[tHiveRow, tHiveInput, tPigLoad, tELTHiveMap, tRESTClient, tHiveLoad, tAlfrescoOutput, tHiveConnection]
+Locations:[platform:/plugin/org.talend.libraries.esb/lib/stax-api-1.0.1.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/stax-api-1.0.1.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.513
+!MESSAGE 2016-04-18 11:51:05,513 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:hadoop-auth-2.6.0.2.2.0.0-2041.jar was defined with different locations.
+Components who define these jars are:[tHDFSPut, tHDFSCompare, tHBaseConnection, tHBaseOutput, tHDFSRename, tSqoopImportAllTables, tELTHiveMap, tHDFSGet, tHDFSExist, tHDFSConnection, tSqoopExport, tHiveCreateTable, tHiveRow, tHDFSList, tSqoopMerge, tHiveLoad, tHDFSProperties, tHCatalogInput, tHDFSInput, tHDFSOutputRaw, tHDFSRowCount, tHDFSDelete, tHDFSCopy, tHCatalogOutput, tHiveInput, tPigLoad, tHBaseInput, tSqoopImport, tHDFSOutput, tHiveConnection]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/hadoop-auth-2.6.0.2.2.0.0-2041.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/hadoop-auth-2.6.0.2.2.0.0-2041.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.520
+!MESSAGE 2016-04-18 11:51:05,519 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:aopalliance-1.0.jar was defined with different locations.
+Components who define these jars are:[tCloudStop, tCloudStart, tHiveRow, tHiveInput, tPigLoad, tELTHiveMap, tESBConsumer, tRESTClient, tHiveLoad, tHiveConnection]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/aopalliance-1.0.jar, platform:/plugin/org.talend.libraries.esb/lib/aopalliance-1.0.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.527
+!MESSAGE 2016-04-18 11:51:05,526 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:hadoop-common-2.6.0.2.2.0.0-2041.jar was defined with different locations.
+Components who define these jars are:[tHDFSPut, tHDFSCompare, tHBaseConnection, tHBaseOutput, tHDFSRename, tSqoopImportAllTables, tELTHiveMap, tHDFSGet, tHDFSExist, tHDFSConnection, tSqoopExport, tHiveCreateTable, tHiveRow, tHDFSList, tSqoopMerge, tHiveLoad, tHDFSProperties, tHCatalogInput, tHDFSInput, tHDFSOutputRaw, tHDFSRowCount, tHDFSDelete, tHDFSCopy, tHCatalogOutput, tHiveInput, tPigLoad, tHBaseInput, tSqoopImport, tHDFSOutput, tHiveConnection]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/hadoop-common-2.6.0.2.2.0.0-2041.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/hadoop-common-2.6.0.2.2.0.0-2041.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.535
+!MESSAGE 2016-04-18 11:51:05,535 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:hadoop-yarn-client-2.6.0.2.2.0.0-2041.jar was defined with different locations.
+Components who define these jars are:[tSqoopExport, tHiveCreateTable, tHiveRow, tHiveInput, tPigLoad, tSqoopImportAllTables, tELTHiveMap, tSqoopMerge, tSqoopImport, tHiveLoad, tHiveConnection]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/hadoop-yarn-client-2.6.0.2.2.0.0-2041.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/hadoop-yarn-client-2.6.0.2.2.0.0-2041.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.544
+!MESSAGE 2016-04-18 11:51:05,543 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:pig-core-h2.jar was defined with different locations.
+Components who define these jars are:[tPigLoad, tPigStoreResult]
+Locations:[platform:/plugin/org.talend.libraries.pig/lib/pig-core-h2.jar, platform:/plugin/org.talend.libraries.hadoop.mapr.5.0.0/lib/pig-core-h2.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.550
+!MESSAGE 2016-04-18 11:51:05,550 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:lz4-1.2.0.jar was defined with different locations.
+Components who define these jars are:[tCassandraOutputBulk, tCassandraBulkExec, tKafkaCreateTopic, tKafkaConnection, tKafkaCommit, tKafkaInput]
+Locations:[platform:/plugin/org.talend.libraries.apache.kafka/lib/lz4-1.2.0.jar, platform:/plugin/org.talend.libraries.apache.cassandra/lib/lz4-1.2.0.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.555
+!MESSAGE 2016-04-18 11:51:05,555 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:avro-1.7.5.jar was defined with different locations.
+Components who define these jars are:[tHDFSPut, tHDFSCompare, tHDFSRename, tSqoopImportAllTables, tELTHiveMap, tHDFSGet, tHDFSExist, tHDFSConnection, tSqoopExport, tHiveCreateTable, tHiveRow, tHDFSList, tSqoopMerge, tPigStoreResult, tHiveLoad, tHDFSProperties, tHCatalogInput, tHDFSInput, tHDFSOutputRaw, tHDFSRowCount, tHDFSDelete, tHDFSCopy, tHCatalogOutput, tHiveInput, tPigLoad, tSqoopImport, tHDFSOutput, tHiveConnection]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/avro-1.7.5.jar, platform:/plugin/org.talend.libraries.hadoop.mapr.4.1.0/lib/avro-1.7.5.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.565
+!MESSAGE 2016-04-18 11:51:05,565 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:metrics-core-2.2.0.jar was defined with different locations.
+Components who define these jars are:[tCassandraOutputBulk, tCassandraBulkExec, tKafkaCreateTopic, tKafkaConnection, tKafkaCommit, tKafkaInput]
+Locations:[platform:/plugin/org.talend.libraries.apache.cassandra/lib/metrics-core-2.2.0.jar, platform:/plugin/org.talend.libraries.apache.kafka/lib/metrics-core-2.2.0.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.572
+!MESSAGE 2016-04-18 11:51:05,572 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:xmlbeans-2.6.0.jar was defined with different locations.
+Components who define these jars are:[tFileOutputExcel, tFileInputExcel, tMicrosoftCrmOutput, tMicrosoftCrmInput]
+Locations:[platform:/plugin/org.talend.libraries.apache.cxf/lib/xmlbeans-2.6.0.jar, platform:/plugin/org.talend.libraries.apache.xml/lib/xmlbeans-2.6.0.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.579
+!MESSAGE 2016-04-18 11:51:05,578 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:hadoop-hdfs-2.6.0.2.2.0.0-2041.jar was defined with different locations.
+Components who define these jars are:[tHDFSPut, tHDFSCompare, tHDFSRename, tSqoopImportAllTables, tELTHiveMap, tHDFSGet, tHDFSExist, tHDFSConnection, tSqoopExport, tHiveCreateTable, tHiveRow, tHDFSList, tSqoopMerge, tHiveLoad, tHDFSProperties, tHCatalogInput, tHDFSInput, tHDFSOutputRaw, tHDFSRowCount, tHDFSDelete, tHDFSCopy, tHCatalogOutput, tHiveInput, tPigLoad, tSqoopImport, tHDFSOutput, tHiveConnection]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/hadoop-hdfs-2.6.0.2.2.0.0-2041.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/hadoop-hdfs-2.6.0.2.2.0.0-2041.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.584
+!MESSAGE 2016-04-18 11:51:05,584 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:zookeeper-3.4.6.jar was defined with different locations.
+Components who define these jars are:[tHiveRow, tHiveInput, tPigLoad, tELTHiveMap, tKafkaCreateTopic, tKafkaConnection, tKafkaCommit, tKafkaInput, tESBConsumer, tRESTClient, tHiveLoad, tHiveConnection]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/zookeeper-3.4.6.jar, platform:/plugin/org.talend.libraries.esb/lib/zookeeper-3.4.6.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.588
+!MESSAGE 2016-04-18 11:51:05,587 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:log4j-1.2.16.jar was defined with different locations.
+Components who define these jars are:[tCassandraOutputBulk, tHBaseConnection, tHBaseOutput, tCassandraBulkExec, tELTHiveMap, tCassandraInput, tKafkaCreateTopic, tKafkaConnection, tCassandraConnection, tKafkaOutput, tHiveCreateTable, tHiveRow, tHiveInput, tCassandraOutput, tHBaseInput, tKafkaCommit, tKafkaInput, tCassandraRow, tHiveLoad, tHiveConnection]
+Locations:[platform:/plugin/org.talend.libraries.apache/lib/log4j-1.2.16.jar, platform:/plugin/org.talend.libraries.apache.kafka/lib/log4j-1.2.16.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.592
+!MESSAGE 2016-04-18 11:51:05,591 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:slf4j-api-1.7.12.jar was defined with different locations.
+Components who define these jars are:[tNeo4jOutput, tNeo4jInput, tNeo4jConnection, tMicrosoftCrmOutput, tNeo4jRow, tMicrosoftCrmInput, tNeo4jOutputRelationship]
+Locations:[platform:/plugin/org.talend.libraries.neo4j/lib/slf4j-api-1.7.12.jar, platform:/plugin/org.talend.libraries.apache.cxf/lib/slf4j-api-1.7.12.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.596
+!MESSAGE 2016-04-18 11:51:05,596 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:jackson-mapper-asl-1.9.7.jar was defined with different locations.
+Components who define these jars are:[tNeo4jOutput, tNeo4jInput, tCassandraConnection, tCassandraOutput, tNeo4jConnection, tNeo4jRow, tCassandraRow, tNeo4jOutputRelationship]
+Locations:[null, platform:/plugin/org.talend.designer.components.bigdata/components/tNeo4jConnection/jackson-mapper-asl-1.9.7.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.602
+!MESSAGE 2016-04-18 11:51:05,602 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:jackson-core-asl-1.9.7.jar was defined with different locations.
+Components who define these jars are:[tNeo4jOutput, tNeo4jInput, tCassandraConnection, tCassandraOutput, tNeo4jConnection, tNeo4jRow, tCassandraRow, tNeo4jOutputRelationship]
+Locations:[null, platform:/plugin/org.talend.designer.components.bigdata/components/tNeo4jConnection/jackson-core-asl-1.9.7.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.611
+!MESSAGE 2016-04-18 11:51:05,611 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:slf4j-api-1.7.12.jar was defined with different locations.
+Components who define these jars are:[tNeo4jOutput, tNeo4jInput, tNeo4jConnection, tMicrosoftCrmOutput, tNeo4jRow, tMicrosoftCrmInput, tNeo4jOutputRelationship]
+Locations:[platform:/plugin/org.talend.libraries.neo4j/lib/slf4j-api-1.7.12.jar, platform:/plugin/org.talend.libraries.apache.cxf/lib/slf4j-api-1.7.12.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.721
+!MESSAGE 2016-04-18 11:51:05,721 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:hadoop-yarn-common-2.6.0.2.2.0.0-2041.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/hadoop-yarn-common-2.6.0.2.2.0.0-2041.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/hadoop-yarn-common-2.6.0.2.2.0.0-2041.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.725
+!MESSAGE 2016-04-18 11:51:05,724 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:slf4j-api-1.7.5.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2, plugin:org.talend.libraries.slf4j]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/slf4j-api-1.7.5.jar, platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.7.5.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.728
+!MESSAGE 2016-04-18 11:51:05,727 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:joda-time-2.7.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.esb]
+Locations:[platform:/plugin/org.talend.hadoop.distribution.cdh550/lib/joda-time-2.7.jar, platform:/plugin/org.talend.libraries.esb/lib/joda-time-2.7.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.732
+!MESSAGE 2016-04-18 11:51:05,731 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:avro-1.7.4.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2, plugin:org.talend.libraries.hadoop.mapr.4.0.1]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.mapr.4.0.1/lib/avro-1.7.4.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/avro-1.7.4.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.736
+!MESSAGE 2016-04-18 11:51:05,735 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:httpclient-4.2.5.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2, plugin:org.talend.libraries.apache.http]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/httpclient-4.2.5.jar, platform:/plugin/org.talend.libraries.apache.http/lib/httpclient-4.2.5.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.740
+!MESSAGE 2016-04-18 11:51:05,740 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:stax-api-1.0.1.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2, plugin:org.talend.libraries.esb]
+Locations:[platform:/plugin/org.talend.libraries.esb/lib/stax-api-1.0.1.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/stax-api-1.0.1.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.743
+!MESSAGE 2016-04-18 11:51:05,742 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:hadoop-auth-2.6.0.2.2.0.0-2041.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/hadoop-auth-2.6.0.2.2.0.0-2041.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/hadoop-auth-2.6.0.2.2.0.0-2041.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.747
+!MESSAGE 2016-04-18 11:51:05,747 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:hadoop-yarn-client-2.6.0.2.2.0.0-2041.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/hadoop-yarn-client-2.6.0.2.2.0.0-2041.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/hadoop-yarn-client-2.6.0.2.2.0.0-2041.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.751
+!MESSAGE 2016-04-18 11:51:05,751 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:jaxb-impl-2.2.11.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.esb, plugin:org.talend.libraries.mdm]
+Locations:[platform:/plugin/org.talend.libraries.esb/lib/jaxb-impl-2.2.11.jar, platform:/plugin/org.talend.libraries.apache.cxf/lib/jaxb-impl-2.2.11.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.755
+!MESSAGE 2016-04-18 11:51:05,755 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:cxf-rt-databinding-jaxb-3.1.4.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.esb, plugin:org.talend.libraries.mdm]
+Locations:[platform:/plugin/org.talend.libraries.esb/lib/cxf-rt-databinding-jaxb-3.1.4.jar, platform:/plugin/org.talend.libraries.apache.cxf/lib/cxf-rt-databinding-jaxb-3.1.4.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.759
+!MESSAGE 2016-04-18 11:51:05,759 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:zookeeper-3.4.6.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2, plugin:org.talend.libraries.esb]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/zookeeper-3.4.6.jar, platform:/plugin/org.talend.libraries.esb/lib/zookeeper-3.4.6.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.764
+!MESSAGE 2016-04-18 11:51:05,764 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:jackson-core-asl-1.9.13.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2, plugin:org.talend.libraries.jackson]
+Locations:[platform:/plugin/org.talend.libraries.jackson/lib/jackson-core-asl-1.9.13.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/jackson-core-asl-1.9.13.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.770
+!MESSAGE 2016-04-18 11:51:05,770 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:commons-configuration-1.6.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.apache.common, plugin:org.talend.libraries.hadoop.hdp.2.2]
+Locations:[platform:/plugin/org.talend.libraries.apache.common/lib/commons-configuration-1.6.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/commons-configuration-1.6.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.775
+!MESSAGE 2016-04-18 11:51:05,775 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:slf4j-log4j12-1.7.5.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2, plugin:org.talend.libraries.slf4j]
+Locations:[platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.7.5.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/slf4j-log4j12-1.7.5.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.781
+!MESSAGE 2016-04-18 11:51:05,780 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:cxf-rt-wsdl-3.1.4.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.esb, plugin:org.talend.libraries.mdm]
+Locations:[platform:/plugin/org.talend.libraries.apache.cxf/lib/cxf-rt-wsdl-3.1.4.jar, platform:/plugin/org.talend.libraries.esb/lib/cxf-rt-wsdl-3.1.4.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.786
+!MESSAGE 2016-04-18 11:51:05,785 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:htrace-core-3.0.4.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/htrace-core-3.0.4.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/htrace-core-3.0.4.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.791
+!MESSAGE 2016-04-18 11:51:05,791 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:cxf-core-3.1.4.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.esb, plugin:org.talend.libraries.mdm]
+Locations:[platform:/plugin/org.talend.libraries.apache.cxf/lib/cxf-core-3.1.4.jar, platform:/plugin/org.talend.libraries.esb/lib/cxf-core-3.1.4.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.796
+!MESSAGE 2016-04-18 11:51:05,796 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:cxf-rt-frontend-simple-3.1.4.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.esb, plugin:org.talend.libraries.mdm]
+Locations:[platform:/plugin/org.talend.libraries.esb/lib/cxf-rt-frontend-simple-3.1.4.jar, platform:/plugin/org.talend.libraries.apache.cxf/lib/cxf-rt-frontend-simple-3.1.4.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.801
+!MESSAGE 2016-04-18 11:51:05,800 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:hadoop-yarn-api-2.6.0.2.2.0.0-2041.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/hadoop-yarn-api-2.6.0.2.2.0.0-2041.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/hadoop-yarn-api-2.6.0.2.2.0.0-2041.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.805
+!MESSAGE 2016-04-18 11:51:05,805 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:jackson-core-2.2.3.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2, plugin:org.talend.hadoop.distribution.cdh550]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/jackson-core-2.2.3.jar, platform:/plugin/org.talend.hadoop.distribution.cdh550/lib/jackson-core-2.2.3.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.810
+!MESSAGE 2016-04-18 11:51:05,809 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:neethi-3.0.3.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.esb, plugin:org.talend.libraries.mdm]
+Locations:[platform:/plugin/org.talend.libraries.esb/lib/neethi-3.0.3.jar, platform:/plugin/org.talend.libraries.apache.cxf/lib/neethi-3.0.3.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.814
+!MESSAGE 2016-04-18 11:51:05,814 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:guava-11.0.2.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.guava, plugin:org.talend.libraries.hadoop.mapr.4.0.1]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.mapr.4.0.1/lib/guava-11.0.2.jar, platform:/plugin/org.talend.libraries.guava/lib/guava-11.0.2.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.818
+!MESSAGE 2016-04-18 11:51:05,818 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:jackson-mapper-asl-1.9.13.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2, plugin:org.talend.libraries.jackson]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/jackson-mapper-asl-1.9.13.jar, platform:/plugin/org.talend.libraries.jackson/lib/jackson-mapper-asl-1.9.13.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.823
+!MESSAGE 2016-04-18 11:51:05,823 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:aopalliance-1.0.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2, plugin:org.talend.libraries.esb]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/aopalliance-1.0.jar, platform:/plugin/org.talend.libraries.esb/lib/aopalliance-1.0.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.826
+!MESSAGE 2016-04-18 11:51:05,826 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:cxf-rt-ws-security-3.1.4.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.esb, plugin:org.talend.libraries.mdm]
+Locations:[platform:/plugin/org.talend.libraries.esb/lib/cxf-rt-ws-security-3.1.4.jar, platform:/plugin/org.talend.libraries.apache.cxf/lib/cxf-rt-ws-security-3.1.4.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.831
+!MESSAGE 2016-04-18 11:51:05,831 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:hadoop-common-2.6.0.2.2.0.0-2041.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/hadoop-common-2.6.0.2.2.0.0-2041.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/hadoop-common-2.6.0.2.2.0.0-2041.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.835
+!MESSAGE 2016-04-18 11:51:05,835 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:pig-core-h2.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.pig, plugin:org.talend.libraries.hadoop.mapr.5.0.0]
+Locations:[platform:/plugin/org.talend.libraries.pig/lib/pig-core-h2.jar, platform:/plugin/org.talend.libraries.hadoop.mapr.5.0.0/lib/pig-core-h2.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.839
+!MESSAGE 2016-04-18 11:51:05,838 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:cxf-rt-frontend-jaxws-3.1.4.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.esb, plugin:org.talend.libraries.mdm]
+Locations:[platform:/plugin/org.talend.libraries.esb/lib/cxf-rt-frontend-jaxws-3.1.4.jar, platform:/plugin/org.talend.libraries.apache.cxf/lib/cxf-rt-frontend-jaxws-3.1.4.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.843
+!MESSAGE 2016-04-18 11:51:05,843 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:jaxb-core-2.2.11.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.esb, plugin:org.talend.libraries.mdm]
+Locations:[platform:/plugin/org.talend.libraries.esb/lib/jaxb-core-2.2.11.jar, platform:/plugin/org.talend.libraries.apache.cxf/lib/jaxb-core-2.2.11.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.848
+!MESSAGE 2016-04-18 11:51:05,848 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:avro-1.7.5.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2, plugin:org.talend.libraries.hadoop.mapr.4.1.0]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/avro-1.7.5.jar, platform:/plugin/org.talend.libraries.hadoop.mapr.4.1.0/lib/avro-1.7.5.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.853
+!MESSAGE 2016-04-18 11:51:05,852 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:woodstox-core-asl-4.4.1.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.esb, plugin:org.talend.libraries.mdm]
+Locations:[platform:/plugin/org.talend.libraries.esb/lib/woodstox-core-asl-4.4.1.jar, platform:/plugin/org.talend.libraries.apache.cxf/lib/woodstox-core-asl-4.4.1.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.857
+!MESSAGE 2016-04-18 11:51:05,857 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:hadoop-hdfs-2.6.0.2.2.0.0-2041.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/hadoop-hdfs-2.6.0.2.2.0.0-2041.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/hadoop-hdfs-2.6.0.2.2.0.0-2041.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.861
+!MESSAGE 2016-04-18 11:51:05,861 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:snappy-java-1.0.4.1.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2, plugin:org.talend.libraries.hadoop.hdp.2.1, plugin:org.talend.libraries.hadoop.mapr.4.0.1]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.1/lib/snappy-java-1.0.4.1.jar, platform:/plugin/org.talend.libraries.hadoop.mapr.4.0.1/lib/snappy-java-1.0.4.1.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/snappy-java-1.0.4.1.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.865
+!MESSAGE 2016-04-18 11:51:05,865 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:cxf-rt-transports-http-3.1.4.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.esb, plugin:org.talend.libraries.mdm]
+Locations:[platform:/plugin/org.talend.libraries.esb/lib/cxf-rt-transports-http-3.1.4.jar, platform:/plugin/org.talend.libraries.apache.cxf/lib/cxf-rt-transports-http-3.1.4.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.868
+!MESSAGE 2016-04-18 11:51:05,868 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:cxf-rt-bindings-soap-3.1.4.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.esb, plugin:org.talend.libraries.mdm]
+Locations:[platform:/plugin/org.talend.libraries.esb/lib/cxf-rt-bindings-soap-3.1.4.jar, platform:/plugin/org.talend.libraries.apache.cxf/lib/cxf-rt-bindings-soap-3.1.4.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.872
+!MESSAGE 2016-04-18 11:51:05,871 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:guice-3.0.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2, plugin:org.talend.libraries.hadoop.hdp.2.1, plugin:org.talend.libraries.hadoop.mapr.4.0.1]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/guice-3.0.jar, platform:/plugin/org.talend.libraries.hadoop.mapr.4.0.1/lib/guice-3.0.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.1/lib/guice-3.0.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.875
+!MESSAGE 2016-04-18 11:51:05,874 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:jetty-util-6.1.26.hwx.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2, plugin:org.talend.libraries.jetty]
+Locations:[platform:/plugin/org.talend.libraries.jetty/lib/jetty-util-6.1.26.hwx.jar, platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/jetty-util-6.1.26.hwx.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.878
+!MESSAGE 2016-04-18 11:51:05,878 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:slf4j-api-1.7.5.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2, plugin:org.talend.libraries.slf4j]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/slf4j-api-1.7.5.jar, platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.7.5.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.881
+!MESSAGE 2016-04-18 11:51:05,881 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:jackson-core-2.2.3.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.hadoop.hdp.2.2, plugin:org.talend.hadoop.distribution.cdh550]
+Locations:[platform:/plugin/org.talend.libraries.hadoop.hdp.2.2/lib/tezServer/jackson-core-2.2.3.jar, platform:/plugin/org.talend.hadoop.distribution.cdh550/lib/jackson-core-2.2.3.jar]
+
+
+!ENTRY org.talend.platform.logging 2 0 2016-04-18 11:51:05.884
+!MESSAGE 2016-04-18 11:51:05,884 WARN  org.talend.commons.exception.CommonExceptionHandler  - Library:pig-core-h2.jar was defined with different locations.
+Components who define these jars are:[plugin:org.talend.libraries.pig, plugin:org.talend.libraries.hadoop.mapr.5.0.0]
+Locations:[platform:/plugin/org.talend.libraries.pig/lib/pig-core-h2.jar, platform:/plugin/org.talend.libraries.hadoop.mapr.5.0.0/lib/pig-core-h2.jar]
+
+
+!ENTRY org.eclipse.ui 2 2 2016-04-18 11:51:22.997
+!MESSAGE Invalid preference category path: org.talend.designer.runtime.visualization.internal.ui.JavaMonitorPreferencePage (bundle: org.talend.designer.runtime.visualization.tools, page: org.talend.designer.runtime.visualization.internal.tools.ToolsPreferencePage)
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:28.493
+!MESSAGE 2016-04-18 11:51:28,493 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for jts-1.12.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.487
+!MESSAGE 2016-04-18 11:51:30,487 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for sapjco3.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.515
+!MESSAGE 2016-04-18 11:51:30,515 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-5.0.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.520
+!MESSAGE 2016-04-18 11:51:30,520 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for mapr-hbase-4.1.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.525
+!MESSAGE 2016-04-18 11:51:30,525 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-0.1.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.569
+!MESSAGE 2016-04-18 11:51:30,569 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for postgis_1.4.0.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.575
+!MESSAGE 2016-04-18 11:51:30,575 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-0.20.2-2.1.2.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.580
+!MESSAGE 2016-04-18 11:51:30,579 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for jodbc.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.585
+!MESSAGE 2016-04-18 11:51:30,585 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for mapr-hbase-5.0.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.643
+!MESSAGE 2016-04-18 11:51:30,643 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for parquet-pig-bundle-1.2.5-cdh5.0.4.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.690
+!MESSAGE 2016-04-18 11:51:30,689 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-4.1.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.696
+!MESSAGE 2016-04-18 11:51:30,695 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for org.talend.sdi.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.759
+!MESSAGE 2016-04-18 11:51:30,759 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for spring-data-neo4j-rest-3.4.0.RELEASE.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.764
+!MESSAGE 2016-04-18 11:51:30,764 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for spark-streaming-kinesis-asl-assembly_2.10-1.5.0.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.769
+!MESSAGE 2016-04-18 11:51:30,769 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-5.0.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.774
+!MESSAGE 2016-04-18 11:51:30,773 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for mapr-hbase-5.0.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.828
+!MESSAGE 2016-04-18 11:51:30,828 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for libprotodefs-4.1.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.901
+!MESSAGE 2016-04-18 11:51:30,900 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for spring-data-neo4j-3.4.0.RELEASE.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.905
+!MESSAGE 2016-04-18 11:51:30,905 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for spark-streaming-kafka-assembly_2.10-1.4.1.2.3.2.0-2950.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.910
+!MESSAGE 2016-04-18 11:51:30,910 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-4.1.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.915
+!MESSAGE 2016-04-18 11:51:30,914 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for mapr-hbase-4.1.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.939
+!MESSAGE 2016-04-18 11:51:30,939 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for libprotodefs-4.1.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.944
+!MESSAGE 2016-04-18 11:51:30,943 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for sapjco.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:51:30.962
+!MESSAGE 2016-04-18 11:51:30,962 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-jni-0.20.2-2.1.2.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 11:57:50.543
+!MESSAGE 2016-04-18 11:57:50,543 INFO  org.talend.designer.core.runprocess.Processor  - Command line: C:/Program Files/Java/jre1.8.0_77/bin/java.exe -Xms256M -Xmx1024M -Dfile.encoding=UTF-8 -cp C:/Talend/Workspaces/Sandbox/.Java/target/classes;.;C:/Talend/Workspaces/Sandbox/.Java/lib/dom4j-1.6.1.jar;C:/Talend/Workspaces/Sandbox/.Java/lib/log4j-1.2.16.jar;C:/Talend/Workspaces/Sandbox/.Java/lib/talendcsv.jar;C:/Talend/Workspaces/Sandbox/.Java/lib; helloria.job1_0_1.Job1 --context=Default --stat_port=4024 %*
+
