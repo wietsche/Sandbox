@@ -514,3 +514,153 @@ Locations:[platform:/plugin/org.talend.libraries.pig/lib/pig-core-h2.jar, platfo
 !ENTRY org.talend.platform.logging 1 0 2016-04-18 11:57:50.543
 !MESSAGE 2016-04-18 11:57:50,543 INFO  org.talend.designer.core.runprocess.Processor  - Command line: C:/Program Files/Java/jre1.8.0_77/bin/java.exe -Xms256M -Xmx1024M -Dfile.encoding=UTF-8 -cp C:/Talend/Workspaces/Sandbox/.Java/target/classes;.;C:/Talend/Workspaces/Sandbox/.Java/lib/dom4j-1.6.1.jar;C:/Talend/Workspaces/Sandbox/.Java/lib/log4j-1.2.16.jar;C:/Talend/Workspaces/Sandbox/.Java/lib/talendcsv.jar;C:/Talend/Workspaces/Sandbox/.Java/lib; helloria.job1_0_1.Job1 --context=Default --stat_port=4024 %*
 
+!SESSION 2016-04-18 14:26:57.504 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_77
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ZA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\\Talend\\Workspaces\\Sandbox
+
+!ENTRY org.eclipse.jdt.launching.macosx 4 0 2016-04-18 14:26:58.674
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.macosx [319]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jdt.launching.ui.macosx 4 0 2016-04-18 14:26:58.682
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.ui.macosx [321]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.emf.ecore 2 0 2016-04-18 14:27:02.286
+!MESSAGE Both 'org.talend.model' and 'org.talend.model' register a package for 'platform:/resource/org.talend.model/model/TalendFile.xsd'
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:03.797
+!MESSAGE 2016-04-18 14:27:03,795 INFO  org.talend.repository.ui.login.LoginProjectPage  - validate updatesite...
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:08.646
+!MESSAGE 2016-04-18 14:27:08,645 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - user@talend.com logged on HelloRIA
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:09.799
+!MESSAGE 2016-04-18 14:27:09,799 INFO  org.talend.core.repository.logintask.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.eclipse.ui 2 2 2016-04-18 14:27:26.921
+!MESSAGE Invalid preference category path: org.talend.designer.runtime.visualization.internal.ui.JavaMonitorPreferencePage (bundle: org.talend.designer.runtime.visualization.tools, page: org.talend.designer.runtime.visualization.internal.tools.ToolsPreferencePage)
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:35.126
+!MESSAGE 2016-04-18 14:27:35,126 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for jts-1.12.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.065
+!MESSAGE 2016-04-18 14:27:37,064 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for sapjco3.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.072
+!MESSAGE 2016-04-18 14:27:37,072 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-5.0.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.088
+!MESSAGE 2016-04-18 14:27:37,088 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for mapr-hbase-4.1.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.094
+!MESSAGE 2016-04-18 14:27:37,094 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-0.1.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.106
+!MESSAGE 2016-04-18 14:27:37,105 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for postgis_1.4.0.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.110
+!MESSAGE 2016-04-18 14:27:37,110 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-0.20.2-2.1.2.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.115
+!MESSAGE 2016-04-18 14:27:37,114 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for jodbc.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.119
+!MESSAGE 2016-04-18 14:27:37,118 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for mapr-hbase-5.0.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.126
+!MESSAGE 2016-04-18 14:27:37,126 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for parquet-pig-bundle-1.2.5-cdh5.0.4.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.134
+!MESSAGE 2016-04-18 14:27:37,134 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-4.1.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.140
+!MESSAGE 2016-04-18 14:27:37,139 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for org.talend.sdi.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.151
+!MESSAGE 2016-04-18 14:27:37,151 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for spring-data-neo4j-rest-3.4.0.RELEASE.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.157
+!MESSAGE 2016-04-18 14:27:37,156 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for spark-streaming-kinesis-asl-assembly_2.10-1.5.0.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.162
+!MESSAGE 2016-04-18 14:27:37,161 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-5.0.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.166
+!MESSAGE 2016-04-18 14:27:37,166 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for mapr-hbase-5.0.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.171
+!MESSAGE 2016-04-18 14:27:37,170 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for libprotodefs-4.1.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.176
+!MESSAGE 2016-04-18 14:27:37,176 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for spring-data-neo4j-3.4.0.RELEASE.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.181
+!MESSAGE 2016-04-18 14:27:37,181 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for spark-streaming-kafka-assembly_2.10-1.4.1.2.3.2.0-2950.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.189
+!MESSAGE 2016-04-18 14:27:37,189 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-4.1.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.195
+!MESSAGE 2016-04-18 14:27:37,195 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for mapr-hbase-4.1.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.201
+!MESSAGE 2016-04-18 14:27:37,201 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for libprotodefs-4.1.0-mapr.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.212
+!MESSAGE 2016-04-18 14:27:37,211 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for sapjco.jar is not available
+
+
+!ENTRY org.talend.platform.logging 1 0 2016-04-18 14:27:37.226
+!MESSAGE 2016-04-18 14:27:37,225 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-jni-0.20.2-2.1.2.jar is not available
+
