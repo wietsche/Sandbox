@@ -6,6 +6,7 @@ pipeline {
                 echo 'Hello world!' 
                 echo 'Hello world !!'
             }
+        }
         stage('Stage 2') {
             steps {
                 echo 'Hello world!' 
@@ -14,3 +15,4 @@ pipeline {
         }
     }
 }
+
